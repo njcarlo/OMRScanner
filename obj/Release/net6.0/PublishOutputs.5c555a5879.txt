@@ -1,0 +1,10 @@
+C:\Users\Jace\Desktop\TestScanner\OMRChecker\obj\Release\net6.0\PubTmp\Out\TestSheetScanner.exe
+C:\Users\Jace\Desktop\TestScanner\OMRChecker\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Jace\Desktop\TestScanner\OMRChecker\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\Jace\Desktop\TestScanner\OMRChecker\obj\Release\net6.0\PubTmp\Out\inputs\sampleInputs\evaluation.json
+C:\Users\Jace\Desktop\TestScanner\OMRChecker\obj\Release\net6.0\PubTmp\Out\inputs\sampleInputs\scans\config.json
+C:\Users\Jace\Desktop\TestScanner\OMRChecker\obj\Release\net6.0\PubTmp\Out\inputs\sampleInputs\template.json
+C:\Users\Jace\Desktop\TestScanner\OMRChecker\obj\Release\net6.0\PubTmp\Out\TestSheetScanner.dll
+C:\Users\Jace\Desktop\TestScanner\OMRChecker\obj\Release\net6.0\PubTmp\Out\TestSheetScanner.deps.json
+C:\Users\Jace\Desktop\TestScanner\OMRChecker\obj\Release\net6.0\PubTmp\Out\TestSheetScanner.runtimeconfig.json
+C:\Users\Jace\Desktop\TestScanner\OMRChecker\obj\Release\net6.0\PubTmp\Out\TestSheetScanner.pdb

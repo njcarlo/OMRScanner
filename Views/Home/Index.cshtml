@@ -1,0 +1,90 @@
+﻿@page
+@using TestSheetScanner.Pages
+@model IndexModel
+
+<h1>Scan The Paper Make The Marker As You Guide</h1>
+
+<div>
+    <video id="video" width="400" height="300"></video>
+    <button id="captureButton" class="btn btn-primary">Capture Image</button>
+</div>
+
+<form id="uploadForm" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="file">Press to Scan</label>
+        <input type="file" id="file" name="File" class="form-control-file" style="display: none;" />
+    </div>
+</form>
+
+<button id="executeButton" class="btn btn-primary">Execute</button>
+
+<script>
+    var fileInput = document.getElementById('file');
+    var video = document.getElementById('video');
+    var captureButton = document.getElementById('captureButton');
+    var executeButton = document.getElementById('executeButton');
+
+    // Capture image from camera
+    function captureImage() {
+        var canvas = document.createElement('canvas');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        var context = canvas.getContext('2d');
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        canvas.toBlob(function (blob) {
+            var file = new File([blob], 'capturedImage.png');
+
+            var formData = new FormData();
+            formData.append('file', file);
+
+            // Send the image file to the server
+            fetch('/Image/ProcessImage', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Handle the response from the server
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }, 'image/png');
+    }
+
+    // Execute button click event
+    executeButton.addEventListener('click', function () {
+        var form = document.getElementById('uploadForm');
+        var formData = new FormData(form);
+        formData.append('scriptPath', "main.py");
+
+        fetch('/Image/ExecutePythonScript', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Python script executed successfully');
+                } else {
+                    console.error('Failed to execute Python script');
+                }
+            })
+            .catch(error => {
+                console.error('Error executing Python script:', error);
+            });
+    });
+
+    // Start camera stream
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+            video.srcObject = stream;
+            video.play();
+        })
+        .catch(function (error) {
+            console.error('Error accessing the camera:', error);
+        });
+
+    // Capture button click event
+    captureButton.addEventListener('click', captureImage);
+</script>
