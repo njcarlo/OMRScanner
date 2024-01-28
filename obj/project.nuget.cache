@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7+qXyD1ErHU/qPJ5OfHJXECHK4jksX5iQq+zsRCAKHjJAI2G9GrekVAyb/aZmOwPl+wXDMqYREn08SKmsMm6Fw==",
+  "dgSpecHash": "Riex8uEAy9Ziq+OaDT0nIln1PJMT66fNrIh+noHYJzhCsLXfdLf+VaOrrI2bHRdNtUvTC1D7TZbayZNSGKoxZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jace\\Desktop\\TestScanner\\OMRChecker\\TestSheetScanner.csproj",
+  "projectFilePath": "C:\\Users\\Jace\\Desktop\\OMRScanner\\TestSheetScanner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jace\\.nuget\\packages\\python\\3.12.1\\python.3.12.1.nupkg.sha512",
     "C:\\Users\\Jace\\.nuget\\packages\\python.runtime\\2.7.9\\python.runtime.2.7.9.nupkg.sha512"

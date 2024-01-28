@@ -32,7 +32,7 @@
         var context = canvas.getContext('2d');
         context.drawImage(video, 0, 0, canvas.width, canvas.height);
         canvas.toBlob(function (blob) {
-            var file = new File([blob], 'capturedImage.png');
+            var file = new File([blob], 'capturedImage.jpg');
 
             var formData = new FormData();
             formData.append('file', file);
@@ -50,7 +50,7 @@
                 .catch(error => {
                     console.error('Error:', error);
                 });
-        }, 'image/png');
+        }, 'image/jpg');
     }
 
     // Execute button click event

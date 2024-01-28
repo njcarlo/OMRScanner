@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jace\\Desktop\\TestScanner\\OMRChecker\\TestSheetScanner.csproj": {}
+    "C:\\Users\\Jace\\Desktop\\OMRScanner\\TestSheetScanner.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jace\\Desktop\\TestScanner\\OMRChecker\\TestSheetScanner.csproj": {
+    "C:\\Users\\Jace\\Desktop\\OMRScanner\\TestSheetScanner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jace\\Desktop\\TestScanner\\OMRChecker\\TestSheetScanner.csproj",
+        "projectUniqueName": "C:\\Users\\Jace\\Desktop\\OMRScanner\\TestSheetScanner.csproj",
         "projectName": "TestSheetScanner",
-        "projectPath": "C:\\Users\\Jace\\Desktop\\TestScanner\\OMRChecker\\TestSheetScanner.csproj",
+        "projectPath": "C:\\Users\\Jace\\Desktop\\OMRScanner\\TestSheetScanner.csproj",
         "packagesPath": "C:\\Users\\Jace\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jace\\Desktop\\TestScanner\\OMRChecker\\obj\\",
+        "outputPath": "C:\\Users\\Jace\\Desktop\\OMRScanner\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
